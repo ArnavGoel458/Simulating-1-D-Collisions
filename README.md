@@ -14,4 +14,6 @@ The script takes five arguments:
 4. m: a non-negative integer,
 5. T: a non-negative float,  
 
-The list of collisions returned are in chronological order that ends as soon as the first m collisions happen or time reaches T (whichever earlier).
+The list of collisions returned are in chronological order that ends as soon as the first m collisions happen or time reaches T (whichever earlier).  
+
+This program uses a customized Heap(modified priority queue) to perform this operation in a time complexity of O(n+mlogn) where n is the number of particles and m is the maximum no. of collisions.
